@@ -129,10 +129,10 @@ keyboard = InlineKeyboardMarkup(
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text(f"Hello [{m.from_user.first_name}](tg://user?id={m.from_user.id})\nPress /TIGER")
+    editable = await m.reply_text(f"HELLOW I AM TXT DOWNLOADER BOT  [{m.from_user.first_name}](tg://user?id={m.from_user.id})\nPress /TIGER")
 
 
-@bot.on_message(filters.command("stop"))
+@bot.on_message(filters.command("STOP"))
 async def restart_handler(_, m):
     await m.reply_text("**STOPPED**🚦", True)
     os.execl(sys.executable, sys.executable, *sys.argv)
@@ -147,7 +147,7 @@ async def account_login(bot: Client, m: Message):
         return
     else:
         editable = await m.reply_text(
-            "send text file🗃️")
+            "SEND TXT FILE 🗃️")
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
     await input.delete(True)
@@ -172,18 +172,18 @@ async def account_login(bot: Client, m: Message):
            return
     
    
-    await editable.edit(f"Total links found are **{len(links)}**\n\nSend From where you want to download initial is **1**")
+    await editable.edit(f"Total links found are **{len(links)}**\n\nSEND FROM WHERE YOU WANT TO DOWNLOAD INITIAL is **1**")
     input0: Message = await bot.listen(editable.chat.id)
     raw_text = input0.text
     await input0.delete(True)
 
-    await editable.edit("**Enter Batch Name**")
+    await editable.edit("**ENTER BATCH NAME**")
     input1: Message = await bot.listen(editable.chat.id)
     raw_text0 = input1.text
     await input1.delete(True)
     
 
-    await editable.edit("**Enter resolution**")
+    await editable.edit("**ENTER RESOLUTION**")
     input2: Message = await bot.listen(editable.chat.id)
     raw_text2 = input2.text
     await input2.delete(True)
@@ -207,7 +207,7 @@ async def account_login(bot: Client, m: Message):
     
     
 
-    await editable.edit("**Enter A Highlighter Otherwise send 👉Co👈 **")
+    await editable.edit("**ENTER A HIGHLIGHTER OTHERWISE SEND 👉CO👈 **")
     input3: Message = await bot.listen(editable.chat.id)
     raw_text3 = input3.text
     await input3.delete(True)
@@ -217,7 +217,7 @@ async def account_login(bot: Client, m: Message):
     else:
         MR = raw_text3
    
-    await editable.edit("Now send the **Thumb url**\nEg : ```https://telegra.ph/file/0633f8b6a6f110d34f044.jpg```\n\nor Send `no`")
+    await editable.edit("NOW SEND THE **THUMB URL**\nEG : ```https://telegra.ph/file/0633f8b6a6f110d34f044.jpg```\n\nor SEND `NO`")
     input6 = message = await bot.listen(editable.chat.id)
     raw_text6 = input6.text
     await input6.delete(True)
@@ -307,13 +307,13 @@ async def account_login(bot: Client, m: Message):
 
             except Exception as e:
                 await m.reply_text(
-                    f"**downloading failed 🥺**\n{str(e)}\n**Name** - {name}\n**Link** - `{url}`"
+                    f"**DOWNLOADING FAILED 🥺**\n{str(e)}\n**Name** - {name}\n**Link** - `{url}`"
                 )
                 continue
 
     except Exception as e:
         await m.reply_text(e)
-    await m.reply_text("Done")
+    await m.reply_text("BATCH SUCCESSFULLY DOWNLOADED ✅")
 
 
 bot.run()
