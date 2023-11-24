@@ -1,7 +1,7 @@
 # BOT
 # Join Me... 
 <a href="https://t.me/TIGER0054">
-     <img height="250px" src="https://telegra.ph/file/3b6ddd8f2f12ca4728d7e.jpg">
+     <img height="225px" src="https://telegra.ph/file/3b6ddd8f2f12ca4728d7e.jpg">
   </a>
 
 ## Colab
