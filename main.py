@@ -116,7 +116,7 @@ keyboard = InlineKeyboardMarkup(
         [
             InlineKeyboardButton(
                 text="Devloper",
-                url="",
+                url="https://t.me/TIGER0054",
             ),
             InlineKeyboardButton(
                 text="Repo",
