@@ -1,7 +1,7 @@
 # BOT
 # Join Me... 
 <a href="https://t.me/devgagan">
-     <img height="100px" src="https://telegra.ph/file/e6b0772e46994304f9a00.jpg">
+     <img height="100px" src="https://telegra.ph/file/3b6ddd8f2f12ca4728d7e.jpg">
   </a>
 
 ## Colab
